@@ -1,0 +1,46 @@
+*{
+    font-family: Rubik;
+    
+}
+body{
+    background-color: #f5f5f5;
+}
+#index{
+    background-image: url("../images/ATG.png");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+#index .loglay .btn{
+    font-size: 30px;
+    padding: 10px 30px;
+    border:none;
+    letter-spacing: 2px;
+    border-radius: 0;
+    background-color: #E74C3C;
+    margin-bottom: 50px;
+}
+.user-form-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #E74C3C;
+}
+.user-form-container h1 a{
+    color:#fff!important;
+}
+.user-form-container .card.card-body{
+    border-radius: 0;
+    border:none;
+}
+.header-section{
+    background-color: #E74C3C;
+    color:#fff;
+}
