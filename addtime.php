@@ -13,16 +13,16 @@
 			 $slot_increment = 0;
 			 break;
 			case Tuesday:
-			 $slot_increment = 5;
+			 $slot_increment = 7;
 			 break;
 			case Wednesday:
-			 $slot_increment = 10;
+			 $slot_increment = 14;
 			 break;
 			case Thursday:
-			 $slot_increment = 15;
+			 $slot_increment = 21;
 			 break;
 			case Friday:
-			 $slot_increment = 20;
+			 $slot_increment = 28;
 			 break;
 		}
 		$slot = substr($time_slot,0,1);
@@ -42,7 +42,7 @@
 		<div class="container pt-5">
 			<div class="fpanel" >
 				<fieldset style="padding:10px 20px;margin-bottom:20px;">
-						<legend style="width:auto;font-weight:bold;color:#020031;">Add time Details</legend>
+						<legend style="width:auto;font-weight:bold;color:#020031;"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Add Time Details</legend>
 						<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 						<div class="row">
 							<div class="form-group col-6 m-0">
@@ -58,11 +58,20 @@
 							<div class="form-group col-6 m-0">
 							<select class="form-control" name="time_slot">
 								<option selected>Select Time Slot</option>
-								<option value="1-8:00-9:00">Slot 1: 8:00 to 9:00</option>
-								<option value="2-9:00-10:00">Slot 2: 9:00 to 10:00</option>
-								<option value="3-10:00-11:00">Slot 3: 10:00 to 11:00</option>
-								<option value="4-11:00-12:00">Slot 4: 11:00 to 12:00</option>
-								<option value="5-12:00-1:00">Slot 5: 12:00 to 1:00</option>
+								<option value="1-8:00-9:30">Normal: 8:00 to 9:30</option>
+								<option value="2-9:30-11:00">Normal: 9:30 to 11:00</option>
+								<option value="3-11:00-12:30">Normal: 11:00 to 12:30</option>
+								<option value="4-12:30-2:00">Normal: 12:30 to 02:00</option>
+								<option value="5-02:00-03:30">Normal: 02:00 to 03:30</option>
+								<option value="6-03:30-05:00">Normal: 03:30 to 05:00</option>
+								<option value="7-05:00-06:00">Normal: 05:00 to 06:00</option>
+								<option value="1-8:00-9:20">Short: 8:00 to 9:20</option>
+								<option value="2-9:20-10:40">Short: 9:20 to 10:40</option>
+								<option value="3-10:40-12:00">Short: 10:40 to 12:00</option>
+								<option value="4-12:00-1:20">Short: 12:00 to 01:20</option>
+								<option value="5-02:00-03:30">Short: 02:00 to 03:30</option>
+								<option value="6-03:30-05:00">Short: 03:30 to 05:00</option>
+								<option value="7-05:00-06:00">Short: 05:00 to 06:00</option>
 							</select>
 							</div>
 							</div>
