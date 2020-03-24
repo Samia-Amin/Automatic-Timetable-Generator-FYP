@@ -38,9 +38,11 @@
 				<li class="nav-item"><a class="nav-link" href="semester.php">Semester</a></li>
 				<li class="nav-item"><a class="nav-link" href="subject.php">Subjects</a></li>
 				<li class="nav-item"><a class="nav-link" href="room.php">Room</a></li>
-				<li class="nav-item"><a class="nav-link" href="time.php">Timing</a></li>
+				<li class="nav-item"><a class="nav-link" href="time.php">Time</a></li>
 				<li class="nav-item"><a class="nav-link" href="algorithm.php">Algorithm</a></li>
-				<li class="nav-item pull-right"><a class="nav-link" href="logout.php">Logout</a></li>
+			</ul>
+			<ul class="navbar-nav">
+				<li class="nav-item pull-right"><a class="nav-link" href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
 			</ul>
 		</div>
 	</nav>
