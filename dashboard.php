@@ -51,32 +51,60 @@
         <div class="col-lg-3 pt-5">
             <div class="card">
                 <div class="card-body text-center">
-                    <div class="card-title">Faculty Members</div>
-                    <h1><?php echo $faculty_count?></h1>
+                    <div class="row m-0 d-flex align-items-center">
+                        <div class="col-8 text-left p-0">
+                            <h1><?php echo $faculty_count?></h1>
+                            <div class="card-title h6">Faculty Members</div>
+                        </div>
+                        <div class="col-4 text-right p-0">
+                        <i class="fa fa-users fa-4x" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-3 pt-5">
             <div class="card">
                 <div class="card-body text-center">
-                    <div class="card-title">Total Semesters</div>
-                    <h1><?php echo $semester_count?></h1>
+                    <div class="row m-0 d-flex align-items-center">
+                        <div class="col-8 text-left p-0">
+                            <h1><?php echo $semester_count?></h1>
+                            <div class="card-title h6">Total Semesters</div>
+                        </div>
+                        <div class="col-4 text-right p-0">
+                        <i class="fa fa-cubes fa-4x" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-3 pt-5">
             <div class="card">
                 <div class="card-body text-center">
-                    <div class="card-title">Total Subjects</div>
-                    <h1><?php echo $subject_count?></h1>
+                    <div class="row m-0 d-flex align-items-center">
+                        <div class="col-8 text-left p-0">
+                            <h1><?php echo $subject_count?></h1>
+                            <div class="card-title h6">Total Subjects</div>
+                        </div>
+                        <div class="col-4 text-right p-0">
+                        <i class="fa fa-book fa-4x" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-lg-3 pt-5">
             <div class="card">
                 <div class="card-body text-center">
-                    <div class="card-title">Total Rooms</div>
-                    <h1><?php echo $room_count?></h1>
+                    <div class="row m-0 d-flex align-items-center">
+                        <div class="col-8 text-left p-0">
+                            <h1><?php echo $room_count?></h1>
+                            <div class="card-title h6">Total Rooms</div>
+                        </div>
+                        <div class="col-4 text-right p-0">
+                        <i class="fa fa-building fa-4x" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
