@@ -7,12 +7,14 @@
 		// Get form data
 		$update_id = mysqli_real_escape_string($conn, $_POST['update_id']);
 		$sub_name = mysqli_real_escape_string($conn, $_POST['sub_name']);
+		$sub_credits = mysqli_real_escape_string($conn, $_POST['sub_credits']);
 		$fac_sub_id = mysqli_real_escape_string($conn, $_POST['fac_sub_id']);
 		$sem_id = mysqli_real_escape_string($conn, $_POST['sem_id']);
 		$lab_required = mysqli_real_escape_string($conn, $_POST['lab_required']);
 
 		$query = "UPDATE subject SET 
 					sub_name='$sub_name',
+					sub_credits='$sub_credits',
 					fac_sub_id = '$fac_sub_id',
 					sem_id= '$sem_id',
 					lab_required='$lab_required'
@@ -74,18 +76,23 @@
 		<div class="container pt-5" >
 			<div class="fpanel" >
 				<fieldset style="padding:10px 0px;margin-bottom:20px;">
-						<legend style="width:auto;font-weight:bold;color:#020031;">Update subject Details</legend>
+						<legend style="width:auto;font-weight:bold;color:#020031;"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Update subject Details</legend>
 						<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 						<div class="row">
 							<div class="input-group col-6 m-0 pb-3">
 								<input type="text" class="form-control m-0" name="sub_name" placeholder="subject Name" value="<?php echo $subject['sub_name']; ?>">
 							</div>
-							<div class="form-group col-6 m-0 pb-3">
+							<div class="form-group col-3 m-0 pb-3">
 							<select class="form-control" name="lab_required">
 								<option selected>Lab Required?</option>
 								<option value="yes">Yes</option>
 								<option value="no">No</option>
 							</select>
+							</div>
+							<div class="form-group col-3 m-0 pb-3">
+							<div class="input-group">
+								<input type="number" class="form-control" name="sub_credits" value="<?php echo $subject['sub_credits']; ?>">
+							</div>
 							</div>
 							<div class="form-group col-6 m-0 pb-3">
 							<select class="form-control" name="fac_sub_id">
