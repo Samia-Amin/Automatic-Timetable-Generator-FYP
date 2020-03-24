@@ -43,7 +43,7 @@
 		<div class="container pt-5" >
 			<div class="fpanel" >
 				<fieldset style="padding:10px 0px;margin-bottom:20px;">
-						<legend style="width:auto;font-weight:bold;color:#020031;">Update Room Details</legend>
+						<legend style="width:auto;font-weight:bold;color:#020031;"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Update Room Details</legend>
 						<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">						
 						<div class="row">
 							<div class="input-group col-8 m-0">
